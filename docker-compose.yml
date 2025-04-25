@@ -30,7 +30,7 @@ services:
     depends_on:
       - mysql
     volumes:
-      - prestashop_data:/var/www/html
+      - /var/www/html
 
 networks:
   prestashop:
