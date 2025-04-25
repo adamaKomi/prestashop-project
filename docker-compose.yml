@@ -17,6 +17,7 @@ services:
 
   prestashop:
     image: prestashop/prestashop:1.7
+    command: ["sh", "-c", "sleep 10 && apache2-foreground"] 
     container_name: prestashop
     environment:
       DB_SERVER: mysql
